@@ -90,17 +90,3 @@ function sell(userQty){
   	});
 
 }
-//   {
-//       name:"initprice",
-//       message:"Quantity?\n" 
-//   }
-//   ]).then(function(user) {
-//     // If the inquirerResponse confirms, we displays the inquirerResponse's username and pokemon from the answers.
-    
-//       console.log("\nYour product is: " + inquirerResponse.productname);
-//       console.log("The starting price is: " + inquirerResponse.initprice);
-      
-//       postAnItem(inquirerResponse.productname,inquirerResponse.initprice)
-
-//   });
-// }
