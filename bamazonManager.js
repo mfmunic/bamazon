@@ -155,15 +155,16 @@ function managerActions(con){
 					    		if(err) throw err;
 					    		else {
 					       			console.log(res.affectedRows + " product inserted!\n");
+					       			conn.query("SELECT * FROM products", function(err, res){
+
+										market = res;
+										if (err) throw err;
+										managerActions(conn)
+									})
 					    		}
 						});
 			    })
-			    conn.query("SELECT * FROM products", function(err, res){
-
-					market = res;
-					if (err) throw err;
-					managerActions(conn)
-				})
+			    
                 break;
 
             case "Exit program":
